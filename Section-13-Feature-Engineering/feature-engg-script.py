@@ -11,7 +11,7 @@ def _parse_args():
     # Data, model, and output directories
     # model_dir is always passed in from SageMaker. By default this is a S3 path under the default bucket.
     parser.add_argument('--filepath', type=str, default='/opt/ml/processing/input/')
-    parser.add_argument('--filename', type=str, default='bank-additional-full.csv')
+    parser.add_argument('--filename', type=str, default='./bank-additional-full.csv')
     parser.add_argument('--outputpath', type=str, default='/opt/ml/processing/output/')
     parser.add_argument('--categorical_features', type=str, default='y, job, marital, education, default, housing, loan, contact, month, day_of_week, poutcome')
 
